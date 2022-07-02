@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+
+
+[pager]
+    fetch = "./shell"
+[remote "origin"]
+	url = https://github.com/macilin/test_repo.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+
+[receive]
+	denyCurrentBranch = ignore
